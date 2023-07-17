@@ -1,8 +1,6 @@
 -------------------------------
 v. 2022-07-16
 
-Update of base docker to jupyter/r-notebook:2023-07-11
-
 Make container singularity-friendly
 
 -------------------------------
