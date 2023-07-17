@@ -2,13 +2,6 @@ version: '3'
 
 services:
   sc-r-env:
-    image: gnasello/sc-r-env:2023-05-07
-    build: .
+    image: gnasello/sc-r-env:2023-07-16
     ports:
-      - $JLPORT:$JLPORT
-    volumes:
-      - $HOME_RESEARCHER:/home/researcher # change the path before ":" with the volume you want to mount
-    working_dir: /home/researcher
-    hostname: localhost
-    environment:
-       - JLPORT=${JLPORT}
+      - 8888:8888
