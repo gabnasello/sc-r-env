@@ -1,7 +1,16 @@
-version: '3'
-
+---
+version: "3"
 services:
-  sc-r-env:
-    image: gnasello/sc-r-env:2023-07-16
+  sc-r:
+    image: gnasello/sc-r-env:2024-05-15
+    container_name: sc-r-env
+    user: root
+    environment:
+    - NB_USER=researcher
+    - NB_UID=1234
+    - NB_GID=1234
+    - CHOWN_HOME=yes
+    - CHOWN_HOME_OPTS=-R
+    - GRANT_SUDO=yes
     ports:
       - 8888:8888

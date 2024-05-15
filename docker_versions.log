@@ -1,4 +1,11 @@
 -------------------------------
+v. 2024-05-15
+
+Update jupyter/r-notebook base image
+
+Install R packages
+
+-------------------------------
 v. 2022-07-16
 
 Make container singularity-friendly

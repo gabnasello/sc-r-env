@@ -1,11 +1,8 @@
-# docker-stacks/r-notebook [https://github.com/jupyter/docker-stacks/tree/master/r-notebook]
-# https://hub.docker.com/r/jupyter/r-notebook/dockerfile
-
-FROM jupyter/r-notebook:2023-03-27
+FROM quay.io/jupyter/r-notebook:2023-12-14
 
 # Configure environment
 ENV DOCKER_IMAGE_NAME='sc-r-env'
-ENV VERSION='2023-07-16' 
+ENV VERSION='2024-05-15' 
 
 # How to connect all conda envs to jupyter notebook
 # https://stackoverflow.com/questions/61494376/how-to-connect-r-conda-env-to-jupyter-notebook
